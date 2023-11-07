@@ -1,0 +1,43 @@
+{
+  "name": "neighbours-serverless",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "sst start --stage local",
+    "build": "sst build",
+    "check-types": "tsc --pretty --noEmit",
+    "deploy:dev": "sst deploy --stage dev",
+    "deploy:prod": "sst deploy --stage prod",
+    "remove:dev": "sst remove --stage dev",
+    "remove:debug": "sst remove --stage local",
+    "console": "sst console",
+    "test": "vitest run",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.4.4",
+    "aws-cdk-lib": "2.84.0",
+    "constructs": "10.1.156",
+    "eslint": "^8.46.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.10.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.1",
+    "sst": "^2.22.5",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.1.6"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules
+yarn.lock
+package-lock.json
+scripts
+public
+.prettierrc
+.prettierignore
+.vscode
+.sst
+.build

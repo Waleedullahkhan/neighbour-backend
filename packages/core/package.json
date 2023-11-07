@@ -1,0 +1,19 @@
+{
+  "name": "@neighbours/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.121",
+    "@types/node": "^20.6.3",
+    "sst": "^2.25.5",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "mongoose": "^7.5.2",
+    "zod": "^3.22.2"
+  }
+}
